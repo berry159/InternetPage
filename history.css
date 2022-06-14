@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bungee', cursive;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/foto2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(4,9,30,0.8);
+}
+
+nav:hover{
+    background-color: rgba(4,9,30,0.5);
+    transition: 0.5s;
+}
+
+nav img{
+    width:3cm;
+    padding: 3%;
+    margin-left: 0.1cm;
+    margin-top: 0.1cm;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+    word-spacing: 3cm;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:rgb(165, 137, 202);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: rgb(226, 219, 219);
+    opacity: 0.4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: auto;
+    padding-top: 0.5cm;
+    text-align: left;
+    padding-left: 1cm;
+    padding-right: 1cm;
+}
+
+.text-box h1{
+    color:rgb(165, 137, 202);
+    word-spacing:1cm;
+    font-size: 35px;
+    font-family: 'Monoton', cursive;
+}
+
+.text-box p{
+    color:rgb(213, 193, 240);
+    font-size: 16px;
+    font-family: 'Audiowide', cursive;
+    font-family: 'Bungee', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Roboto Slab', serif;;
+    padding-bottom: 0.2cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+    text-align: left;
+    padding-top: 0.2cm;
+    text-indent: 25px;
+}
+
+.imageHistory{
+    width: 6cm;
+    padding-top: 25px;
+    padding-right: 25px;
+}
